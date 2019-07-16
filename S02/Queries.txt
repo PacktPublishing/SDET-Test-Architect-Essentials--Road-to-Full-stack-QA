@@ -1,0 +1,30 @@
+SQL Queries for project implementation
+CREATE DATABASE Business;
+
+CREATE TABLE CustomerInfo
+
+(CourseName varchar(50),
+
+PurchasedDate date,
+
+Amount int(50),
+
+Location varchar(50));
+
+
+
+INSERT INTO CustomerInfo values("selenium",CURRENT_DATE(),120,'Africa');
+
+INSERT INTO CustomerInfo values("Protractor",CURRENT_DATE(),45,'Africa');
+
+INSERT INTO CustomerInfo values("Appium",CURRENT_DATE(),99,'Asia');
+
+INSERT INTO CustomerInfo values("WebServices",CURRENT_DATE(),21,'Asia');
+
+INSERT INTO CustomerInfo values("Jmeter",CURRENT_DATE(),76,'Asia');
+
+
+
+
+
+select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia';
